@@ -12,6 +12,8 @@ alias flushdns='sudo killall -HUP mDNSResponder'
 function jrubyDebug() {
   JRUBY_OPTS="-J-Xdebug -J-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005"
 }
+function ppjson() { cat $1 | python -mjson.tool | less -F; }
+
 export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWSTASHSTATE=true
 export GIT_PS1_SHOWUNTRACKEDFILES=true
