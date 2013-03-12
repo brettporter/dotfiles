@@ -39,7 +39,7 @@ export SVN_EDITOR=/usr/bin/vim
 
 export CLICOLOR=true
 
-source $HOME/bin/mvn_functions_bashrc.txt
+source $HOME/bin/mvn_functions.bash
 export MAVEN_OPTS="-XX:+UseCompressedOops -Xmx256m -XX:MaxPermSize=256m"
 
 export CVS_RSH=ssh
