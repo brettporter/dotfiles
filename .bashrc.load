@@ -40,3 +40,5 @@ source $HOME/bin/mvn_functions_bashrc.txt
 export MAVEN_OPTS="-XX:+UseCompressedOops -Xmx256m -XX:MaxPermSize=256m"
 
 export CVS_RSH=ssh
+
+umask 0002
