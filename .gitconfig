@@ -1,0 +1,15 @@
+[user]
+	name = Brett Porter
+[github]
+	user = brettporter
+[core]
+	autocrlf = input
+	excludesfile = /Users/brett/.gitignore_global
+[color]
+	ui = auto
+[push]
+	default = upstream
+[branch]
+	autosetuprebase = always
+[credential]
+	helper = osxkeychain
