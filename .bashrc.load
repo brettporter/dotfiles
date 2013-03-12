@@ -33,3 +33,5 @@ fi
 
 export EDITOR=/usr/bin/vim
 export SVN_EDITOR=/usr/bin/vim
+
+export CLICOLOR=true
