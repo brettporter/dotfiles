@@ -1,0 +1,5 @@
+[extensions]
+convert=
+[ui]
+username=Brett Porter <brett@apache.org>
+ignore=/Users/brett/.hgignore_global
