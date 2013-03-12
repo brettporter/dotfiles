@@ -29,10 +29,6 @@ source $HOME/bin/vagrant-bash-completion/vagrant
 alias setjdk16='export JAVA_HOME=$(/usr/libexec/java_home -v 1.6*)'
 alias setjdk17='export JAVA_HOME=$(/usr/libexec/java_home -v 1.7*)'
 
-if [ -f $HOME/bin/private_functions.bash ]; then
-  . $HOME/bin/private_functions.bash
-fi
-
 export EDITOR=/usr/bin/vim
 export SVN_EDITOR=/usr/bin/vim
 
@@ -44,3 +40,7 @@ export MAVEN_OPTS="-XX:+UseCompressedOops -Xmx256m -XX:MaxPermSize=256m"
 export CVS_RSH=ssh
 
 umask 0002
+
+if [ -f $HOME/bin/private_functions.bash ]; then
+  . $HOME/bin/private_functions.bash
+fi
