@@ -1,0 +1,3 @@
+[submodule "bin/vagrant-bash-completion"]
+	path = bin/vagrant-bash-completion
+	url = https://github.com/brettporter/vagrant-bash-completion.git

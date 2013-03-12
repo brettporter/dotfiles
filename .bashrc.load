@@ -12,3 +12,5 @@ alias flushdns='sudo killall -HUP mDNSResponder'
 function jrubyDebug() {
   JRUBY_OPTS="-J-Xdebug -J-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005"
 }
+
+source $HOME/bin/vagrant-bash-completion/vagrant
