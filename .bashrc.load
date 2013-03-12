@@ -31,3 +31,5 @@ if [ -f $HOME/bin/private_functions.bash ]; then
   . $HOME/bin/private_functions.bash
 fi
 
+export EDITOR=/usr/bin/vim
+export SVN_EDITOR=/usr/bin/vim
