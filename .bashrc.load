@@ -1,5 +1,7 @@
 export PATH=$PATH:$HOME/bin
 
+# For nova client
+export PATH=$PATH:/usr/local/share/python
 
 alias flushdns='sudo killall -HUP mDNSResponder'
 
