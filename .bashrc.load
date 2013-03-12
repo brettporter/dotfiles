@@ -37,6 +37,8 @@ export CLICOLOR=true
 source $HOME/bin/mvn_functions.bash
 export MAVEN_OPTS="-XX:+UseCompressedOops -Xmx256m -XX:MaxPermSize=128m"
 
+function archivactl() { sudo launchctl $@ org.apache.archiva; }
+
 export CVS_RSH=ssh
 
 umask 0002
