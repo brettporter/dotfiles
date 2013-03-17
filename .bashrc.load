@@ -14,10 +14,9 @@ function jrubyDebug() {
 }
 function ppjson() { cat $1 | python -mjson.tool | less -F; }
 
-for i in /usr/local/etc/bash_completion.d/*
-do
-  source $i
-done
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
 
 export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWSTASHSTATE=true
