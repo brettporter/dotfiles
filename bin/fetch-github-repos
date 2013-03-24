@@ -6,10 +6,6 @@ GITHUB_ORGANIZATION=${GITHUB_ORGANIZATION:=""}
 GITHUB_USER=${GITHUB_USER:=""}
 GITHUB_CHECKOUT_DIR=${GITHUB_CHECKOUT_DIR:="~/workspace"}
 
-if [ "$GITHUB_ORGANIZATION" == "" ]; then
-    echo "Please configure your GITHUB_ORGANIZATION, GITHUB_USER and GITHUB_CHECKOUT_DIR env variables"
-    exit 1;
-fi
 if [ "$GITHUB_USER" == "" ]; then
     echo "Please configure your GITHUB_ORGANIZATION, GITHUB_USER and GITHUB_CHECKOUT_DIR env variables"
     exit 2;
@@ -37,7 +33,12 @@ else
     # fetch repository list via github api
     # grep fetches the json object key ssh_url, which contains the ssh url for the repository
     PAGE=1;
-    REPOLIST=`curl -u "${GITHUB_USER}:${GITHUB_PASS}" --silent "https://api.github.com/orgs/${GITHUB_ORGANIZATION}/repos?type=all&page=$PAGE&per_page=100" -q | grep "\"ssh_url\"" | awk -F': "' '{print $2}' | sed -e 's/",//g'`
+    if [ -z "$GITHUB_ORGANIZATION" ]; then
+      BASE_URL="https://api.github.com/users/${GITHUB_USER}/repos"
+    else
+      BASE_URL="https://api.github.com/orgs/${GITHUB_ORGANIZATION}/repos"
+    fi
+    REPOLIST=`curl -u "${GITHUB_USER}:${GITHUB_PASS}" --silent "${BASE_URL}?type=all&page=$PAGE&per_page=100" -q | grep "\"ssh_url\"" | awk -F': "' '{print $2}' | sed -e 's/",//g'`
 
     while [ "$REPOLIST" != "" ]; do
         # loop over all repository urls and execute clone
@@ -65,6 +66,6 @@ else
         done
 
         let PAGE=PAGE+1
-        REPOLIST=`curl -u "${GITHUB_USER}:${GITHUB_PASS}" --silent "https://api.github.com/orgs/${GITHUB_ORGANIZATION}/repos?type=all&page=$PAGE&per_page=100" -q | grep "\"ssh_url\"" | awk -F': "' '{print $2}' | sed -e 's/",//g'`
+        REPOLIST=`curl -u "${GITHUB_USER}:${GITHUB_PASS}" --silent "${BASE_URL}?type=all&page=$PAGE&per_page=100" -q | grep "\"ssh_url\"" | awk -F': "' '{print $2}' | sed -e 's/",//g'`
     done
 fi
