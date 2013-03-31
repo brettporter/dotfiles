@@ -1,0 +1,1 @@
+export ACTIVEMQ_OPTS="-Xmx64M -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties"
