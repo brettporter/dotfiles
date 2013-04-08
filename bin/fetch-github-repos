@@ -5,12 +5,13 @@
 GITHUB_ORGANIZATION=${GITHUB_ORGANIZATION:=""}
 GITHUB_USER=${GITHUB_USER:=""}
 GITHUB_CHECKOUT_DIR=${GITHUB_CHECKOUT_DIR:="~/workspace"}
+GITHUB_USER_EMAIL=${GITHUB_USER_EMAIL:=""}
 
 if [ "$GITHUB_USER" == "" ]; then
     echo "Please configure your GITHUB_ORGANIZATION, GITHUB_USER and GITHUB_CHECKOUT_DIR env variables"
     exit 2;
 fi
-echo "using GITHUB_ORGANIZATION=$GITHUB_ORGANIZATION GITHUB_USER=$GITHUB_USER GITHUB_CHECKOUT_DIR=$GITHUB_CHECKOUT_DIR"
+echo "using GITHUB_ORGANIZATION=$GITHUB_ORGANIZATION GITHUB_USER=$GITHUB_USER GITHUB_CHECKOUT_DIR=$GITHUB_CHECKOUT_DIR GITHUB_USER_EMAIL=$GITHUB_USER_EMAIL"
 
 # the git clone cmd used for cloning each repository
 # the parameter recursive is used to clone submodules, too.
@@ -63,6 +64,9 @@ else
             # run git commands after checkout/update
             GIT_WORK_TREE="${GITHUB_CHECKOUT_DIR}/${REPONAME}" GIT_DIR="${GITHUB_CHECKOUT_DIR}/${REPONAME}/.git" ${GIT_CONFIG_REBASE_CMD}
             GIT_WORK_TREE="${GITHUB_CHECKOUT_DIR}/${REPONAME}" GIT_DIR="${GITHUB_CHECKOUT_DIR}/${REPONAME}/.git" ${GIT_CONFIG_REBASE_MASTER_CMD}
+            if [ "$GITHUB_USER_EMAIL" != "" ]; then
+                GIT_WORK_TREE="${GITHUB_CHECKOUT_DIR}/${REPONAME}" GIT_DIR="${GITHUB_CHECKOUT_DIR}/${REPONAME}/.git" git config user.email $GITHUB_USER_EMAIL
+            fi
         done
 
         let PAGE=PAGE+1
