@@ -18,11 +18,15 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
+function __rvm_ps1() {
+  local r=$(rvm-prompt)
+  [ ! -z "$r" ] && printf -- ${1:-" %s"} $r
+}
 export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWSTASHSTATE=true
 export GIT_PS1_SHOWUNTRACKEDFILES=true
 export GIT_PS1_SHOWUPSTREAM="auto"
-export PS1='[\A] \u@\[\033[1;34m\033[1m\]\h\[\033[0m\]:\W$(__git_ps1 " (%s)")\$ '
+export PS1='[\A] \u@\[\033[1;34m\033[1m\]\h\[\033[0m\]:\W$(__git_ps1 " (%s)")$(__rvm_ps1)\$ '
 
 source $HOME/bin/vagrant-bash-completion/vagrant
 
