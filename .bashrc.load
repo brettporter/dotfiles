@@ -4,6 +4,9 @@ export PATH=$PATH:$HOME/bin
 # Homebrew
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
+# for Karma
+PATH="/usr/local/share/npm/lib/node_modules/karma/bin:$PATH"
+
 # For nova client
 export PATH=$PATH:/usr/local/share/python
 
