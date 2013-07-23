@@ -13,3 +13,5 @@
 	autosetuprebase = always
 [credential]
 	helper = osxkeychain
+[help]
+	autocorrect = 25
