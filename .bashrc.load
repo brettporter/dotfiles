@@ -30,11 +30,10 @@ export PS1='[\A] \u@\[\033[1;34m\033[1m\]\h\[\033[0m\]:\W$(__git_ps1 " (%s)")$(_
 
 source $HOME/bin/vagrant-bash-completion/vagrant
 
-# To set Java 6 as default
-#export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home
-
-alias setjdk16='export JAVA_HOME=$(/usr/libexec/java_home -v 1.6*)'
-alias setjdk17='export JAVA_HOME=$(/usr/libexec/java_home -v 1.7*)'
+function setjdk() {
+  export JAVA_HOME=$(/usr/libexec/java_home -v 1.$1*)
+}
+setjdk 7
 
 alias tac=gtac
 
