@@ -37,7 +37,7 @@ setjdk 7
 
 alias tac=gtac
 
-export JRUBY_OPTS="-J-Xmx256m -J-XX:+UseCompressedOops"
+export JRUBY_OPTS="-J-Xmx256m -J-XX:+UseCompressedOops -J-XX:MaxPermSize=256m"
 
 export EDITOR=/usr/bin/vim
 export SVN_EDITOR=/usr/bin/vim
@@ -45,7 +45,7 @@ export SVN_EDITOR=/usr/bin/vim
 export CLICOLOR=true
 
 source $HOME/bin/mvn_functions.bash
-export MAVEN_OPTS="-XX:+UseCompressedOops -Xmx256m -XX:MaxPermSize=128m"
+export MAVEN_OPTS="-XX:+UseCompressedOops -Xmx512m -XX:MaxPermSize=256m"
 
 function archivactl() { sudo launchctl $@ org.apache.archiva; }
 
