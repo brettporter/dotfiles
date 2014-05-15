@@ -7,6 +7,9 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 # for Karma
 PATH="/usr/local/share/npm/lib/node_modules/karma/bin:$PATH"
 
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
 alias flushdns='sudo killall -HUP mDNSResponder'
 
 function jrubyDebug() {
