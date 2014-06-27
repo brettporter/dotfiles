@@ -79,6 +79,7 @@ source $HOME/bin/mvn_functions.bash
 export MAVEN_OPTS="-XX:+UseCompressedOops -Xmx512m -XX:MaxPermSize=256m"
 
 function archivactl() { sudo launchctl $@ org.apache.archiva; }
+alias chomp='perl -i -pe "chomp if eof"'
 
 export CVS_RSH=ssh
 
