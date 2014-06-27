@@ -68,6 +68,9 @@ setjdk 7
 
 alias tac=gtac
 
+alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1])"'
+alias urldecode='python -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
+
 export JRUBY_OPTS="-J-Xmx256m -J-XX:+UseCompressedOops -J-XX:MaxPermSize=256m"
 
 export EDITOR=/usr/bin/vim
