@@ -4,7 +4,7 @@ require 'tempfile'
 require 'optparse'
 
 def parse_version(text)
-  if (text.match(/^\s*<version>\s*(.*?)\s*<\/version>\s*$/))
+  if (text and text.match(/^\s*<version>\s*(.*?)\s*<\/version>\s*$/))
     $1
   else
     nil
@@ -26,6 +26,7 @@ def resolve_conflicts(filename, preferred_version, scm)
 
   tmpFile = Tempfile.open('fix_maven_conflicts')
   
+  add_to_scm = true
   File.open(filename, "r") { |conflictFile|
     conflictFile.each_with_index { |line, index|
       if (line.match(/^<{7}/))
@@ -53,8 +54,10 @@ def resolve_conflicts(filename, preferred_version, scm)
         else
           if (left_version.nil? or right_version.nil?)
             puts "Skipping conflict at line #{conflict[:lineno]} as it contains more than conflicting versions"
+            add_to_scm = false
           else
             puts "Skipping conflict at line #{conflict[:lineno]} as neither version matches"
+            add_to_scm = false
           end
           puts format_conflict(conflict)
           tmpFile.puts format_conflict(conflict)
@@ -79,8 +82,12 @@ def resolve_conflicts(filename, preferred_version, scm)
     File.rename filename, "#{filename}.conflicts"
     File.rename tmpFile, filename
 
-    `git add #{filename}` if outstanding_conflicts.empty? and scm == :git
-    `svn resolved #{filename}` if outstanding_conflicts.empty? and scm == :svn
+    if add_to_scm
+      `git add #{filename}` if outstanding_conflicts.empty? and scm == :git
+      `svn resolved #{filename}` if outstanding_conflicts.empty? and scm == :svn
+    else
+      puts "Not adding #{filename} to SCM - more conflicts to resolve"
+    end
   else
     tmpFile.unlink
   end
