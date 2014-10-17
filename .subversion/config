@@ -147,6 +147,7 @@ abs-menulinks = svn:eol-style=native
 *.aart = svn:eol-style=native
 *.ac = svn:eol-style=native
 *.am = svn:eol-style=native
+*.apt = svn:eol-style=native
 *.asp = svn:eol-style=native
 *.aspx = svn:eol-style=native
 *.bat = svn:eol-style=native
