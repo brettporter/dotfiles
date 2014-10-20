@@ -21,10 +21,8 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
-function __rvm_ps1() {
-  local r=$(rvm-prompt)
-  [ ! -z "$r" ] && printf -- ${1:-" (%s)"} $r
-}
+export RBENV_ROOT=/usr/local/var/rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 function prompt {
   local black="\[\033[0;30m\]"
@@ -48,9 +46,8 @@ function prompt {
   local status_colour="\$(if [ \$? != 0 ]; then echo \"${red_bold}\"; fi )"
  
   local git_prompt='$(__git_ps1 " (%s)")'
-  local rvm_prompt='$(__rvm_ps1)'
 
-  export PS1="${status_colour}[\A] \h${reset}:${blue}\W${purple}${git_prompt}${red}${rvm_prompt}${reset}\$ "
+  export PS1="${status_colour}[\A] \h${reset}:${blue}\W${purple}${git_prompt}${red}${reset}\$ "
 }
 
 export GIT_PS1_SHOWDIRTYSTATE=true
