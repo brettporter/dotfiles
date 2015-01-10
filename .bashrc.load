@@ -83,6 +83,11 @@ alias chomp='perl -i -pe "chomp if eof"'
 
 export CVS_RSH=ssh
 
+# Avoid duplicates
+export HISTCONTROL=ignoredups:erasedups  
+# When the shell exits, append to the history file instead of overwriting it
+shopt -s histappend
+
 if [ -f $HOME/bin/private_functions.bash ]; then
   . $HOME/bin/private_functions.bash
 fi
