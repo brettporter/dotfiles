@@ -92,3 +92,9 @@ shopt -s histappend
 if [ -f $HOME/bin/private_functions.bash ]; then
   . $HOME/bin/private_functions.bash
 fi
+
+complete -C aws_completer aws
+export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.7.1.0/libexec"
+export AWS_ELB_HOME="/usr/local/Cellar/elb-tools/1.0.35.0/libexec"
+export AWS_AUTO_SCALING_HOME="/usr/local/Cellar/auto-scaling/1.0.61.6/libexec"
+export AWS_CREDENTIAL_FILE="$HOME/.aws/credentials-as"
