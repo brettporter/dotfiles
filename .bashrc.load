@@ -57,6 +57,7 @@ export GIT_PS1_SHOWUPSTREAM="auto"
 prompt
 
 source $HOME/bin/vagrant-bash-completion/vagrant
+source $HOME/bin/tmuxinator.bash
 
 function setjdk() {
   export JAVA_HOME=$(/usr/libexec/java_home -v 1.$1*)
