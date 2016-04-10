@@ -16,6 +16,11 @@ function jrubyDebug() {
   JRUBY_OPTS="-J-Xdebug -J-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005"
 }
 function ppjson() { cat $1 | python -mjson.tool | less -F; }
+function movtogif() {
+  in=$1
+  out=`echo $1 | sed 's/.mov$/.gif/'`
+  ffmpeg -i $in -s 600x400 -pix_fmt rgb24 -r 10 -f gif - | gifsicle --optimize=3 --delay=5 --no-loopcount >$out
+}
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
