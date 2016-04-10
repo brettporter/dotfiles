@@ -17,3 +17,4 @@
 	autocorrect = 25
 [alias]
 	stashed = stash list --pretty=format:'%gd: %Cred%h%Creset %Cgreen[%ar]%Creset %s'
+	patdiff = difftool -y -x patdiff
