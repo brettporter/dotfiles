@@ -102,3 +102,5 @@ export AWS_CREDENTIAL_FILE="$HOME/.aws/credentials-as"
 
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+
+export ANDROID_HOME=/usr/local/opt/android-sdk
