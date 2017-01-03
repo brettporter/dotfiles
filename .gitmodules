@@ -4,3 +4,6 @@
 [submodule "bin/github-tools"]
 	path = bin/github-tools
 	url = https://github.com/arimus/github-tools.git
+[submodule "bin/clustergit"]
+	path = bin/clustergit
+	url = https://github.com/mnagel/clustergit
