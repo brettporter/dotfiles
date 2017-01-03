@@ -7,3 +7,6 @@
 [submodule "bin/clustergit"]
 	path = bin/clustergit
 	url = https://github.com/mnagel/clustergit
+[submodule "bin/oo2otl-repo"]
+	path = bin/oo2otl-repo
+	url = https://gist.github.com/749332.git
