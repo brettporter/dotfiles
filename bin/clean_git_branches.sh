@@ -14,7 +14,5 @@ if [ "$?" != 0 ]; then
   exit 1
 fi
 
-echo Cleaning up
-
 git remote prune origin
 git branch -l --merged | grep -v develop | grep -v master | xargs git branch -d
