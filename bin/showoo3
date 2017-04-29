@@ -1,0 +1,15 @@
+#!/bin/sh
+
+file=$1
+if [ ! -f $file ]; then
+  file=$1/contents.xml
+fi
+if [ ! -f $file ]; then
+  file=$1.oo3/contents.xml
+fi
+if [ ! -f $file ]; then
+  echo Usage: $0 [path to .oo3 file]
+  exit 1
+fi
+
+gunzip -c $file | oo2otl
