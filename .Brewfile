@@ -1,3 +1,5 @@
+# To install, run brew bundle --global
+
 # CLI Tools
 brew "awscli"
 
@@ -7,6 +9,8 @@ brew "cmake"
 
 # Developer tools
 brew "cloc"
+brew "parallel"
+cask "drawio"
 
 # SDKs
 cask "java"
