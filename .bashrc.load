@@ -75,7 +75,7 @@ alias flushdns='sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder'
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1])"'
 alias urldecode='python -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
 
-export JRUBY_OPTS="-J-Xmx256m -J-XX:+UseCompressedOops -J-XX:MaxPermSize=256m"
+export JRUBY_OPTS="-J-Xmx256m -J-XX:+UseCompressedOops"
 
 export EDITOR=/usr/bin/vim
 export SVN_EDITOR=/usr/bin/vim
@@ -83,7 +83,7 @@ export SVN_EDITOR=/usr/bin/vim
 export CLICOLOR=true
 
 source $HOME/bin/mvn_functions.bash
-export MAVEN_OPTS="-XX:+UseCompressedOops -Xmx512m -XX:MaxPermSize=256m"
+export MAVEN_OPTS="-XX:+UseCompressedOops -Xmx512m"
 
 function archivactl() { sudo launchctl $@ org.apache.archiva; }
 alias chomp='perl -i -pe "chomp if eof"'
