@@ -11,6 +11,7 @@ brew "cmake"
 brew "cloc"
 brew "parallel"
 cask "drawio"
+cask "visual-studio-code"
 
 # SDKs
 cask "java"
