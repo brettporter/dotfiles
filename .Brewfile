@@ -12,6 +12,7 @@ brew "cloc"
 brew "parallel"
 cask "drawio"
 cask "visual-studio-code"
+brew "flyway"
 
 # SDKs
 cask "java"
