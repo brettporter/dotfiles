@@ -19,3 +19,4 @@ cask "java"
 # VMs
 cask "virtualbox"
 cask "vagrant"
+cask "minikube"
