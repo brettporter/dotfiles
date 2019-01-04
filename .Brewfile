@@ -6,6 +6,14 @@ brew "awscli"
 # Building tools
 brew "protobuf"
 brew "cmake"
+brew "coreutils"
+brew "wget"
+brew "libtool"
+brew "go"
+brew "bazel"
+brew "automake"
+brew "ninja"
+brew "clang-format"
 
 # Developer tools
 brew "cloc"
