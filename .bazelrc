@@ -1,1 +1,1 @@
---action_env=PATH=/usr/local/bin:/opt/local/bin:/usr/bin:/bin"
+build --action_env=PATH="/usr/local/bin:/opt/local/bin:/usr/bin:/bin"
