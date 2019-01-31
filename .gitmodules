@@ -10,3 +10,6 @@
 [submodule "bin/oo2otl-repo"]
 	path = bin/oo2otl-repo
 	url = https://gist.github.com/749332.git
+[submodule "bin/github-watch-all"]
+	path = bin/github-watch-all
+	url = https://gist.github.com/4226cbf2eff7686790cc10b7de63fd85.git
