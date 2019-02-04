@@ -35,6 +35,7 @@ brew "flyway"
 cask "virtualbox"
 cask "vagrant"
 cask "minikube"
+cask "docker"
 
 # Applications
 mas "Trello", id: 1278508951
@@ -43,3 +44,7 @@ mas "Slack", id: 803453959
 mas "LimeChat", id: 414030210
 mas "Amphetamine", id: 937984704
 cask "google-chrome"
+cask "omnifocus2"
+cask "viscosity"
+cask "spotify"
+cask "flycut"
