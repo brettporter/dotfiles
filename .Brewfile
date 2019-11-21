@@ -2,7 +2,6 @@
 
 # Taps
 tap "bazelbuild/tap", pin: true
-tap "txn2/tap"
 tap "johanhaleby/kubetail"
 
 # SDKs
@@ -47,7 +46,6 @@ cask "virtualbox"
 cask "vagrant"
 cask "minikube"
 cask "docker"
-brew "txn2/tap/kubefwd"
 brew "kubetail"
 
 # Applications
