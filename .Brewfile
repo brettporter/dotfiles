@@ -11,6 +11,7 @@ cask "java"
 brew "awscli"
 brew "aws-iam-authenticator"
 brew "bash-completion"
+brew "csvkit"
 
 # Building tools
 brew "protobuf"
@@ -40,6 +41,11 @@ brew "jq"
 cask "insomnia"
 cask "viscosity"
 brew "gnuplot"
+cask "bloomrpc"
+tap "shopify/shopify"
+brew "toxiproxy"
+tap "codeclimate/formulae"
+brew "codeclimate"
 
 # VMs
 cask "virtualbox"
