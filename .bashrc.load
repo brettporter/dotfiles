@@ -12,8 +12,11 @@ export GOPATH=$HOME/go
 export PATH="$PATH:$GOPATH/bin"
 export PATH="$HOME/.cargo/bin:$PATH"
 
-#Rust
+# Rust
 export PATH="$PATH:$HOME/.cargo/bin"
+
+# Flutter
+export PATH="$PATH:$HOME/flutter/bin"
 
 function jrubyDebug() {
   JRUBY_OPTS="-J-Xdebug -J-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005"
