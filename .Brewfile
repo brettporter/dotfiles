@@ -1,17 +1,26 @@
 # To install, run brew bundle --global
 
 # Taps
-tap "bazelbuild/tap", pin: true
 tap "johanhaleby/kubetail"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+brew "mas"
 
 # SDKs
 cask "java"
+cask "homebrew/cask-versions/adoptopenjdk8"
+brew "python@2"
 
 # CLI Tools
-brew "awscli"
-brew "aws-iam-authenticator"
 brew "bash-completion"
 brew "csvkit"
+brew "gnupg"
+brew "pinentry-mac"
+brew "sops"
+brew "xz"
+brew "expect"
+brew "telnet"
 
 # Building tools
 brew "protobuf"
@@ -20,7 +29,7 @@ brew "coreutils"
 brew "wget"
 brew "libtool"
 brew "go"
-brew "bazelbuild/tap/bazel"
+brew "bazel"
 brew "automake"
 brew "ninja"
 brew "clang-format"
@@ -29,8 +38,13 @@ brew "hub"
 brew "nvm"
 brew "bower"
 brew "git-lfs"
+brew "maven"
+brew "rbenv"
 
 # Developer tools
+brew "awscli"
+brew "aws-iam-authenticator"
+brew "httpie"
 brew "cloc"
 brew "parallel"
 cask "drawio"
@@ -46,6 +60,11 @@ tap "shopify/shopify"
 brew "toxiproxy"
 tap "codeclimate/formulae"
 brew "codeclimate"
+brew "postgresql"
+brew "consul"
+brew "carthage"
+brew "yarn"
+brew "watch"
 
 # VMs
 cask "virtualbox"
