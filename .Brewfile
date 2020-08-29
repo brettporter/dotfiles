@@ -55,13 +55,18 @@ brew "kubetail"
 
 # Applications
 mas "Trello", id: 1278508951
-mas "Evernote", id: 406056744
 mas "Slack", id: 803453959
-mas "LimeChat", id: 414030210
 mas "Amphetamine", id: 937984704
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft Word", id: 462054704
-mas "Microsoft Remote Desktop 10", id: 1295203466
+mas "Bear", id: 1091189122
+mas "Instapaper", id: 1481302432
+mas "Microsoft Remote Desktop", id: 1295203466
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Skitch", id: 425955336
+mas "Xcode", id: 497799835
 cask "google-chrome"
 cask "omnifocus2"
 cask "spotify"
