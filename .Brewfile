@@ -9,7 +9,7 @@ brew "mas"
 
 # SDKs
 cask "java"
-cask "adoptopenjdk8"
+cask "homebrew/cask-versions/adoptopenjdk8"
 brew "python@2"
 
 # CLI Tools
