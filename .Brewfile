@@ -49,7 +49,6 @@ brew "codeclimate"
 
 # VMs
 cask "virtualbox"
-cask "vagrant"
 cask "minikube"
 cask "docker"
 brew "kubetail"
