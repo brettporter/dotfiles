@@ -13,3 +13,4 @@ source /Users/brett/google-cloud-sdk/path.bash.inc
 source /Users/brett/google-cloud-sdk/completion.bash.inc
 
 fi
+source "$HOME/.cargo/env"
