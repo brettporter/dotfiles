@@ -16,3 +16,4 @@ mas "In Your Face", id: 1476964367
 cask "tripmode"
 cask "spotify"
 cask "vlc"
+cask "flycut"
