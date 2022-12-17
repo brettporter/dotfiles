@@ -8,6 +8,10 @@ brew "kotlin"
 cask "intellij-idea-ce"
 cask "visual-studio-code"
 
+# Advent of Code
+tap "scarvalhojr/tap"
+brew "scarvalhojr/tap/aoc-cli"
+
 # Applications
 mas "Bear", id: 1091189122
 mas "Omnifocus", id: 1346203938
