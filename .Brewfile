@@ -1,12 +1,37 @@
 # Base dependencies
 brew "yadm"
 brew "mas"
+brew "gnupg"
+brew "pinentry-mac"
+
+# Useful tools
+brew "csvkit"
+brew "gd"
+brew "jpeg"
+brew "telnet"
+brew "wget"
 
 # Development tools
 brew "go"
 brew "kotlin"
 cask "intellij-idea-ce"
 cask "visual-studio-code"
+brew "bazel"
+brew "carthage"
+brew "cloc"
+brew "httpie"
+brew "hub"
+brew "jq"
+brew "lua"
+brew "maven"
+brew "nghttp2"
+brew "node"
+brew "nvm"
+brew "protobuf"
+brew "python@3.11"
+brew "rbenv"
+brew "shopify/shopify/toxiproxy"
+brew "watch"
 
 # Advent of Code
 tap "scarvalhojr/tap"
