@@ -10,6 +10,8 @@ brew "gd"
 brew "jpeg"
 brew "telnet"
 brew "wget"
+# Upgraded rsync, faster
+brew "rsync"
 
 # Development tools
 brew "go"
