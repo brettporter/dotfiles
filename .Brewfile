@@ -32,6 +32,7 @@ brew "nvm"
 brew "protobuf"
 brew "python@3.11"
 brew "rbenv"
+tap "shopify/shopify"
 brew "shopify/shopify/toxiproxy"
 brew "watch"
 
