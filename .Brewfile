@@ -35,6 +35,7 @@ brew "rbenv"
 tap "shopify/shopify"
 brew "shopify/shopify/toxiproxy"
 brew "watch"
+brew "git"
 
 # Advent of Code
 tap "scarvalhojr/tap"
