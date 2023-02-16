@@ -36,6 +36,7 @@ brew "shopify/shopify/toxiproxy"
 brew "watch"
 brew "git"
 brew "gh"
+cask "1password/tap/1password-cli"
 
 # Advent of Code
 tap "scarvalhojr/tap"
