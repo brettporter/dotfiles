@@ -1,5 +1,14 @@
 #!/bin/sh
 
-ssh-keygen -t ed25519 -f $HOME/.ssh/id_ed25519 -q -N ""
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+if [ ! -f "$HOME/.ssh/id_ed25519" ]; then
+	echo "Generate SSH key"
+	ssh-keygen -t ed25519 -f $HOME/.ssh/id_ed25519 -q -N ""
+fi
+
+if [ -z "$ZSH" ]; then
+	echo "Install Oh My ZSH"
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi
+
+echo "Install Homebrew dependencies"
 brew bundle --global
