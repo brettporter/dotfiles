@@ -12,3 +12,11 @@ fi
 
 echo "Install Homebrew dependencies"
 brew bundle --global
+
+# 1Password setup
+if [ ! -d "$HOME/.config/op" ]; then
+	echo "To install the 1Password CLI, follow: https://developer.1password.com/docs/cli/get-started/#sign-in"
+	echo "Then run:"
+	echo "  op signin"
+	echo "  op plugin init gh"
+fi
