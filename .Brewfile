@@ -10,6 +10,7 @@ brew "gd"
 brew "jpeg"
 brew "telnet"
 brew "wget"
+brew "exiftool"
 # Upgraded rsync, faster
 brew "rsync"
 
