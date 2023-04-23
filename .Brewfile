@@ -41,6 +41,7 @@ brew "gh"
 cask "1password/tap/1password-cli"
 cask "docker"
 brew "awscli"
+brew "rustup"
 
 # Advent of Code
 tap "scarvalhojr/tap"
