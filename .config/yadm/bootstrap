@@ -20,3 +20,11 @@ if [ ! -d "$HOME/.config/op" ]; then
 	echo "  op signin"
 	echo "  op plugin init gh"
 fi
+
+echo "Install Rust"
+rustup-init -y -q
+
+COMPLETIONS_DIR=$HOME/.oh-my-zsh/completions
+mkdir -p $COMPLETIONS_DIR
+rustup completions zsh >$COMPLETIONS_DIR/_rustup
+rustup completions zsh cargo >$COMPLETIONS_DIR/_cargo
