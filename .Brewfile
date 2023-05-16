@@ -11,6 +11,8 @@ brew "jpeg"
 brew "telnet"
 brew "wget"
 brew "exiftool"
+brew "librsvg"
+brew "zbar"
 # Upgraded rsync, faster
 brew "rsync"
 
