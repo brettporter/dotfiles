@@ -23,6 +23,7 @@ fi
 
 echo "Install Rust"
 rustup-init -y -q
+source "$HOME/.cargo/env"
 
 COMPLETIONS_DIR=$HOME/.oh-my-zsh/completions
 mkdir -p $COMPLETIONS_DIR
