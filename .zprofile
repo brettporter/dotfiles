@@ -4,3 +4,5 @@ if [ -x /opt/homebrew/bin/brew ]; then
 else
 	eval "$(/usr/local/bin/brew shellenv)"
 fi
+
+export LIBRARY_PATH="$LIBRARY_PATH:$(brew --prefix)/lib"
