@@ -1,0 +1,4 @@
+filter_class: 'net.shinyfrog.bear'
+
+extra_includes:
+  - "../match/_bear.yml"

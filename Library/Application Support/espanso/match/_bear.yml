@@ -1,0 +1,20 @@
+matches:
+  - trigger: ":daily"
+    replace: |
+      # Daily notes - {{longdate}}
+      ## Key actions
+      - [ ] 
+
+      ## What happened?
+      * 
+
+      #journal/{{date_yyyymmdd}}
+    vars:
+      - name: longdate
+        type: date
+        params:
+          format: "%A %e %B, %Y"
+      - name: date_yyyymmdd
+        type: date
+        params:
+          format: "%Y/%m/%d"
