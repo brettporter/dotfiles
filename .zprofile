@@ -6,3 +6,4 @@ else
 fi
 
 export LIBRARY_PATH="$LIBRARY_PATH:$(brew --prefix)/lib"
+export EDITOR="vim"
