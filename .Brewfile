@@ -61,3 +61,6 @@ cask "tripmode"
 cask "spotify"
 cask "vlc"
 cask "flycut"
+
+tap "espanso/espanso"
+brew "espanso"
