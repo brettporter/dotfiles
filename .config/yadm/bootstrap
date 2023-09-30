@@ -10,9 +10,6 @@ if [ -z "$ZSH" ]; then
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
-# TODO: find right way to automate this on bootstrap
-# zstyle ':omz:update' mode auto
-
 echo "Install Homebrew dependencies"
 brew bundle --global
 
