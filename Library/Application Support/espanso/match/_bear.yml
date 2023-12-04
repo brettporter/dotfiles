@@ -1,7 +1,7 @@
 matches:
   - trigger: ":daily"
     replace: |
-      # Daily notes - {{longdate}}
+      Daily notes - {{longdate}}
       ## Key actions
       - [ ] 
 
@@ -13,7 +13,7 @@ matches:
       - name: longdate
         type: date
         params:
-          format: "%A %e %B, %Y"
+          format: "%A %-d %B, %Y"
       - name: date_yyyymmdd
         type: date
         params:

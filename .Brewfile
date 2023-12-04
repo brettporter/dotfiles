@@ -63,4 +63,4 @@ cask "vlc"
 cask "flycut"
 
 tap "espanso/espanso"
-brew "espanso"
+cask "espanso"
