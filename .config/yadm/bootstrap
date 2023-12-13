@@ -29,3 +29,10 @@ COMPLETIONS_DIR=$HOME/.oh-my-zsh/completions
 mkdir -p $COMPLETIONS_DIR
 rustup completions zsh >$COMPLETIONS_DIR/_rustup
 rustup completions zsh cargo >$COMPLETIONS_DIR/_cargo
+
+echo "Terminal profiles will be opened in new windows."
+echo "Use Terminal Preferences to set the default afterwards"
+for i in $HOME/.config/terminal/*.terminal
+do
+open $i
+done
