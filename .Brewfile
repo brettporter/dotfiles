@@ -60,6 +60,7 @@ cask "tripmode"
 cask "spotify"
 cask "vlc"
 cask "flycut"
+cask "MonitorControl"
 
 tap "espanso/espanso"
 cask "espanso"
