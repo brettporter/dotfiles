@@ -13,6 +13,7 @@ brew "wget"
 brew "exiftool"
 brew "librsvg"
 brew "zbar"
+brew "graphviz"
 # Upgraded rsync, faster
 brew "rsync"
 
