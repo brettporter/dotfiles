@@ -14,6 +14,7 @@ brew "exiftool"
 brew "librsvg"
 brew "zbar"
 brew "graphviz"
+brew "syncthing"
 # Upgraded rsync, faster
 brew "rsync"
 
@@ -45,6 +46,8 @@ cask "docker"
 brew "awscli"
 brew "rustup"
 brew "sdl2"
+brew "zig"
+brew "zls"
 
 # Advent of Code
 tap "scarvalhojr/tap"
