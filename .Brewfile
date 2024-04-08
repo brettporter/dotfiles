@@ -66,6 +66,4 @@ cask "vlc"
 cask "flycut"
 cask "MonitorControl"
 cask "notion-calendar"
-
-tap "espanso/espanso"
-cask "espanso"
+cask "discord"
