@@ -48,6 +48,7 @@ brew "rustup"
 brew "sdl2"
 brew "zig"
 brew "zls"
+cask "ghostty"
 
 # Advent of Code
 tap "scarvalhojr/tap"
