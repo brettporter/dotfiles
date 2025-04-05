@@ -23,8 +23,6 @@ brew "go"
 brew "kotlin"
 cask "intellij-idea-ce"
 cask "visual-studio-code"
-brew "bazel"
-brew "carthage"
 brew "cloc"
 brew "httpie"
 brew "jq"
@@ -59,9 +57,7 @@ brew "scarvalhojr/tap/aoc-cli"
 mas "Bear", id: 1091189122
 mas "Omnifocus", id: 1542143627
 mas "1Password for Safari", id: 1569813296
-mas "In Your Face", id: 1476964367
 mas "System Color Picker", id: 1545870783
-mas "One Thing", id: 1604176982
 cask "tripmode"
 cask "spotify"
 cask "vlc"
