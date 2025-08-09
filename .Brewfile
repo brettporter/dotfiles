@@ -54,6 +54,7 @@ mas "Bear", id: 1091189122
 mas "Omnifocus", id: 1542143627
 mas "1Password for Safari", id: 1569813296
 mas "System Color Picker", id: 1545870783
+mas "Instapaper", id: 288545208
 cask "tripmode"
 cask "spotify"
 cask "vlc"
