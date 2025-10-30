@@ -43,6 +43,8 @@ brew "sdl2"
 brew "zig"
 brew "zls"
 cask "ghostty"
+cask "claude-code"
+brew "ccusage"
 
 # Advent of Code
 tap "scarvalhojr/tap"
