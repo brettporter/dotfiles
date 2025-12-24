@@ -7,5 +7,6 @@ fi
 
 export LIBRARY_PATH="$LIBRARY_PATH:$(brew --prefix)/lib"
 export EDITOR="vim"
+export PATH=$HOME/go/bin:$PATH
 
 alias brew-not-bundled='brew leaves| while read t1; do grep -q $t1 .Brewfile || echo $t1; done'
