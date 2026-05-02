@@ -5,7 +5,7 @@ else
 	eval "$(/usr/local/bin/brew shellenv)"
 fi
 
-export LIBRARY_PATH="$LIBRARY_PATH:$(brew --prefix)/lib"
+export LIBRARY_PATH="${LIBRARY_PATH:+${LIBRARY_PATH}:}${HOMEBREW_PREFIX}/lib"
 export EDITOR="vim"
 export PATH=$HOME/go/bin:$PATH
 
