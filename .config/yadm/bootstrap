@@ -17,7 +17,7 @@ if [ ! -d "$HOME/.config/op" ]; then
 fi
 
 echo "Install Rust"
-rustup-init -y -q
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y -q
 source "$HOME/.cargo/env"
 
 COMPLETIONS_DIR=$HOME/.zsh/completions
