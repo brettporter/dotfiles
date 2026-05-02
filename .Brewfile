@@ -44,6 +44,7 @@ brew "zls"
 cask "ghostty"
 cask "claude-code"
 brew "ccusage"
+brew "gemini-cli"
 
 # Advent of Code
 tap "scarvalhojr/tap"
@@ -61,3 +62,4 @@ cask "vlc"
 cask "flycut"
 cask "notion-calendar"
 cask "discord"
+cask "Zettlr"
