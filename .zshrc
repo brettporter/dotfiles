@@ -103,6 +103,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# 1Password CLI
-source /Users/brett/.config/op/plugins.sh
 
