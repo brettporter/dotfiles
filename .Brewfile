@@ -17,6 +17,8 @@ brew "graphviz"
 brew "syncthing"
 # Upgraded rsync, faster
 brew "rsync"
+brew "media-info"
+brew "ffmpeg"
 
 # Development tools
 brew "go"
@@ -44,8 +46,10 @@ cask "ghostty"
 cask "claude-code"
 brew "ccusage"
 brew "gemini-cli"
+brew "vercel-cli"
 brew "mise"
 cask "zed"
+cask "uv"
 
 # Advent of Code
 brew "scarvalhojr/tap/aoc-cli"
