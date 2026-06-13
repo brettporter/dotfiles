@@ -20,3 +20,4 @@ setopt PROMPT_SUBST
 PROMPT='%(?.%F{green}.%F{red})➜%f %F{cyan}%1~%f${vcs_info_msg_0_} '
 
 bindkey -e
+eval "$(mise activate zsh)"
