@@ -18,3 +18,5 @@ zstyle ':vcs_info:*' unstagedstr '%F{red} ✗%f'
 precmd_functions+=( vcs_info )
 setopt PROMPT_SUBST
 PROMPT='%(?.%F{green}.%F{red})➜%f %F{cyan}%1~%f${vcs_info_msg_0_} '
+
+bindkey -e
