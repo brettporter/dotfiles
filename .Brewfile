@@ -49,7 +49,7 @@ brew "gemini-cli"
 brew "vercel-cli"
 brew "mise"
 cask "zed"
-cask "uv"
+brew "uv"
 
 # Advent of Code
 brew "scarvalhojr/tap/aoc-cli"
@@ -65,4 +65,3 @@ cask "vlc"
 cask "flycut"
 cask "notion-calendar"
 cask "discord"
-cask "Zettlr"
