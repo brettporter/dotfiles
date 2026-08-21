@@ -21,3 +21,7 @@ PROMPT='%(?.%F{green}.%F{red})➜%f %F{cyan}%1~%f${vcs_info_msg_0_} '
 
 bindkey -e
 eval "$(mise activate zsh)"
+
+# Aliases
+alias gh-review-requests='gh search prs --review-requested=@me --state=open'
+alias gh-pr-open='gh search prs --author=@me --state=open review:required'
