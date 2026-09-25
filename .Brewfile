@@ -49,6 +49,8 @@ brew "vercel-cli"
 brew "mise"
 cask "zed"
 brew "uv"
+brew "cue"
+brew "openspec"
 
 # Advent of Code
 brew "scarvalhojr/tap/aoc-cli"
