@@ -24,4 +24,4 @@ eval "$(mise activate zsh)"
 
 # Aliases
 alias gh-review-requests='gh search prs --review-requested=@me --state=open'
-alias gh-pr-open='gh search prs --author=@me --state=open review:required'
+alias gh-pr-open='gh search prs --author=@me --state=open'
