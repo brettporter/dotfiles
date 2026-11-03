@@ -63,3 +63,8 @@ cask "notion-calendar"
 cask "discord"
 cask "zed"
 cask "obsidian"
+# App to manage software development and track bugs
+cask "linear"
+# Web browser
+cask "google-chrome"
+cask "netnewswire"
