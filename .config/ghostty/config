@@ -1,3 +1,4 @@
 theme = Borland
 background-opacity = 0.8
 keybind = shift+enter=text:\x1b\r
+macos-option-as-alt = left
