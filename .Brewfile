@@ -49,6 +49,7 @@ brew "mise"
 brew "uv"
 brew "cue"
 brew "openspec"
+brew "buf"
 
 # Applications
 mas "Bear", id: 1091189122
@@ -67,3 +68,7 @@ cask "linear"
 # Web browser
 cask "google-chrome"
 cask "netnewswire"
+# Password generator
+brew "pwgen"
+# Download with resuming and segmented downloading
+brew "aria2"
