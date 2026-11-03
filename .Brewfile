@@ -44,12 +44,12 @@ brew "zls"
 cask "ghostty"
 cask "claude-code@latest"
 brew "ccusage"
-brew "vercel-cli"
 brew "mise"
 brew "uv"
 brew "cue"
 brew "openspec"
 brew "buf"
+cask "vercel"
 
 # Applications
 mas "Bear", id: 1091189122
